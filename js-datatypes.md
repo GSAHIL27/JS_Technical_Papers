@@ -1,10 +1,29 @@
 # JavaScript Data Types
 
-JavaScript has 8 data types: 7 primitive and 1 complex.
+Javascript has two main categories of datatypes:
 
-## Primitive Types
+1. Primitive Datatypes- stored directly in memory, immutable
+2. Non-Primitive Datatypes- objects stored by refrence, mutable
 
-### 1. Number
+## 1.Primitive Types
+
+Primitive values cannot be changed once created.
+If you modify them, JS actually creates a new value.
+
+Primitive types:
+
+- String
+- Number
+- Boolean
+- Undefined
+- Null
+- BigInt
+- Symbol
+
+### 1.1 Number
+
+Represents integers and floating numbers.
+
 ```javascript
 let age = 23;
 let price = 99.99;
@@ -15,7 +34,12 @@ let notANumber = NaN;
 console.log(typeof age); // "number"
 ```
 
-### 2. String
+JavaScript uses double-precision floating point, so beware of rounding:
+
+### 1.2 String
+
+Used for textual data.
+
 ```javascript
 let name = "Sahil";
 let greeting = 'Hello';
@@ -24,7 +48,10 @@ let template = `Hi ${name}`;
 console.log(typeof name); // "string"
 ```
 
-### 3. Boolean
+### 1.3 Boolean
+
+Represents true/false conditions.
+
 ```javascript
 let isActive = true;
 let hasPermission = false;
@@ -32,7 +59,12 @@ let hasPermission = false;
 console.log(typeof isActive); // "boolean"
 ```
 
-### 4. Undefined
+Used in conditions, comparisons, and logic.
+
+### 1.4 Undefined
+
+A variable declared but not assigned.
+
 ```javascript
 let x;
 let y = undefined;
@@ -40,7 +72,13 @@ let y = undefined;
 console.log(typeof x); // "undefined"
 ```
 
-### 5. Null
+Functions return undefined by default if no return statement exists.
+
+
+### 1.5 Null
+
+Intentional absence of value.
+
 ```javascript
 let empty = null;
 
@@ -48,7 +86,12 @@ console.log(typeof empty); // "object"
 console.log(empty === null); // true
 ```
 
-### 6. BigInt
+null is of type "object" due to a historical JS bug.
+
+### 1.6 BigInt
+
+Used for extremely large integers.
+
 ```javascript
 let big = 9007199254740991n;
 let another = BigInt(9007199254740991);
@@ -56,7 +99,12 @@ let another = BigInt(9007199254740991);
 console.log(typeof big); // "bigint"
 ```
 
-### 7. Symbol
+BigInt cannot mix with normal numbers:
+
+### 1.7 Symbol
+
+Used for unique identifiers in objects.
+
 ```javascript
 let id1 = Symbol("id");
 let id2 = Symbol("id");
@@ -65,9 +113,17 @@ console.log(id1 === id2); // false (always unique)
 console.log(typeof id1); // "symbol"
 ```
 
-## Complex Type
+Every Symbol is unique:
 
-### 8. Object
+## 2. Non-Primitive Datatypes
+
+These are mutable, and stored by reference.
+
+- Object
+- Array
+- Function
+
+### 2.1 Object
 ```javascript
 let person = { name: "Sahil", age: 23 };
 let colors = ["red", "blue", "green"];
@@ -78,6 +134,9 @@ console.log(typeof person); // "object"
 console.log(typeof colors); // "object"
 console.log(Array.isArray(colors)); // true
 ```
+Objects can store mixed datatypes.
+Array and Function are a type of Object
+
 
 ## Type Checking
 
