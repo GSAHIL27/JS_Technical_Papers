@@ -6,7 +6,7 @@ JavaScript has 8 data types: 7 primitive and 1 complex.
 
 ### 1. Number
 ```javascript
-let age = 25;
+let age = 23;
 let price = 99.99;
 let negative = -10;
 let infinity = Infinity;
@@ -17,7 +17,7 @@ console.log(typeof age); // "number"
 
 ### 2. String
 ```javascript
-let name = "John";
+let name = "Sahil";
 let greeting = 'Hello';
 let template = `Hi ${name}`;
 
@@ -44,7 +44,7 @@ console.log(typeof x); // "undefined"
 ```javascript
 let empty = null;
 
-console.log(typeof empty); // "object" (historical bug in JS)
+console.log(typeof empty); // "object" 
 console.log(empty === null); // true
 ```
 
@@ -69,7 +69,7 @@ console.log(typeof id1); // "symbol"
 
 ### 8. Object
 ```javascript
-let person = { name: "Alice", age: 30 };
+let person = { name: "Sahil", age: 23 };
 let colors = ["red", "blue", "green"];
 let date = new Date();
 let regex = /pattern/;
@@ -83,7 +83,7 @@ console.log(Array.isArray(colors)); // true
 
 ```javascript
 // Use typeof for primitives
-console.log(typeof 42); // "number"
+console.log(typeof 27); // "number"
 console.log(typeof "text"); // "string"
 
 // Special cases
