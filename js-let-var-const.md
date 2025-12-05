@@ -60,15 +60,15 @@ if (true) {
 `const` prevents reassignment, but object/array contents can change.
 
 ```javascript
-const person = { name: "John" };
-person.name = "Jane"; // ✓ Allowed
-person.age = 30; // ✓ Allowed
-// person = {}; // ✗ Error: Assignment to constant
+const person = { name: "Sahil" };
+person.name = "Gosain"; // Allowed
+person.age = 23; // Allowed
+// person = {}; // Error: Assignment to constant
 
 const numbers = [1, 2, 3];
-numbers.push(4); // ✓ Allowed
-numbers[0] = 10; // ✓ Allowed
-// numbers = []; // ✗ Error: Assignment to constant
+numbers.push(4); // Allowed
+numbers[0] = 10; // Allowed
+// numbers = []; // Error: Assignment to constant
 ```
 
 ## When to Use What
