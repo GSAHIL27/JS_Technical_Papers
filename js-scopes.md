@@ -64,13 +64,13 @@ function level1() {
   
   function level2() {
     let inner = "inner";
-    console.log(outer);  // ✓ accessible
-    console.log(middle); // ✓ accessible
-    console.log(inner);  // ✓ accessible
+    console.log(outer);  // accessible
+    console.log(middle); // accessible
+    console.log(inner);  // accessible
   }
   
   level2();
-  // console.log(inner); // ✗ not accessible
+  // console.log(inner); // not accessible
 }
 
 level1();
