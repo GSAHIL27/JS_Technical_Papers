@@ -71,21 +71,11 @@ numbers[0] = 10; // ✓ Allowed
 // numbers = []; // ✗ Error: Assignment to constant
 ```
 
-## Comparison Table
-
-| Feature | var | let | const |
-|---------|-----|-----|-------|
-| Scope | Function | Block | Block |
-| Re-declare | Yes | No | No |
-| Reassign | Yes | Yes | No |
-| Hoisted | Yes (initialized undefined) | Yes (not initialized) | Yes (not initialized) |
-| Temporal Dead Zone | No | Yes | Yes |
-
 ## When to Use What
 
 ```javascript
 // Use const by default
-const API_URL = "https://api.example.com";
+const API_URL = "https://google.com";
 const user = { id: 1 };
 
 // Use let when you need to reassign
